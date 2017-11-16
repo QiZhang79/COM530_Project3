@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+  <title>Qi's Portfolio | Home Page</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+  <header>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li style="float:right"><a class="active" href="#gallery">Gallery</a></li>
+    </ul>
+  </header>
+  
+  <div class="gallery-h1">
+    <h1>My Gallery</h1>
+  </div>
+  
+
+  <div class="gallery cf">
+    <div>
+      <img src="http://abload.de/img/a6aawu.jpg" />
+    </div>
+    <div>
+      <img src="http://abload.de/img/a6aawu.jpg" />
+    </div>
+    <div>
+      <img src="http://abload.de/img/a6aawu.jpg" />
+    </div>
+    <div>
+      <img src="http://abload.de/img/a6aawu.jpg" />
+    </div>
+    <div>
+      <img src="http://abload.de/img/a6aawu.jpg" />
+    </div>
+    <div>
+      <img src="http://abload.de/img/a6aawu.jpg" />
+    </div>
+  </div>
+
+  <footer class="copy">
+      &copy;2017 <a href="https://github.com/QiZhang79?tab=repositories">Qi Zhang</a>
+  </footer>
+  
+  <script>
+      function supportsSVG() {
+        return !! document.createElementNS && !! document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect;
+      }
+      if(!supportsSVG()) {
+          document.getElementsByTagName('body')[0].setAttribute('class', 'no-svg');
+      }
+  </script>
+  
+  
+</body>
+</html>
