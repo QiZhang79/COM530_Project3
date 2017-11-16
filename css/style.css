@@ -1,7 +1,10 @@
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
 body, html {
   height: 100%;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  /*font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+  font: 14px/1 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -19,10 +22,38 @@ h1, h2 {
     font-weight: normal;
     text-align: center;
 }
+/*-----------------*/
+/*----Index Page---*/
+/*-----------------*/
+/*Header*/
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f5a09b;
+}
 
-/*------------*/
+header li {
+    float: left;
+}
+
+header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+header li a:hover:not(.active) {
+    background-color: #111;
+}
+
+header .active {
+    background-color: #4CAF50;
+}
 /*Top Part*/
-/*-----------*/
 .top {
     background: #f5a09b;
     position: relative;
@@ -107,9 +138,7 @@ h1, h2 {
 }
 
 
-/*-----------------------*/
 /*Article \ Parallax Part*/
-/*-----------------------*/
 .parallax [class*="bg-"] {
   position: relative;
   height: 50em;
@@ -184,7 +213,6 @@ article section.parallax {
 }
 
 
-
 /*Copy*/
 .copy {
     position: relative;
@@ -201,8 +229,7 @@ article section.parallax {
 }
 
 
-/* Icons
- ---------- */
+/* Icons*/
 .lisicon {
     display: inline-block;
     width: 3.750em;
@@ -237,9 +264,8 @@ article section.parallax {
     background-position: -5em -25em;
 }
 
-/*-----------*/
+
 /*Meida Query*/
-/*-----------*/
 @media screen and (max-width: 370px) {
   .parallax [class*="bg-"] {
     height: 35em;
@@ -308,3 +334,56 @@ article section.parallax {
     margin: 0 auto;
   }
 }
+
+/*Gallery Page*/
+.gallery-h1 {
+  margin: 40px 0;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.gallery-h1 h1{
+  color: #202020;
+}
+
+.gallery {
+  width: 640px;
+  margin: 0 auto;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery > div > img {
+  display: block;
+  width: 200px;
+  transition: .1s transform;
+  transform: translateZ(0); /* hack */
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}
+
+.gallery > div:hover > img {
+  transform: scale(1.7,1.7);
+  transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+
