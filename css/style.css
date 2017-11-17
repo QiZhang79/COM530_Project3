@@ -4,7 +4,7 @@
 body, html {
   height: 100%;
   /*font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
-  font: 14px/1 'Open Sans', sans-serif;
+  font: 16px 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -335,7 +335,10 @@ article section.parallax {
   }
 }
 
-/*Gallery Page*/
+
+/*----------------------*/
+/*-----Gallery Page-----*/
+/*----------------------*/
 .gallery-h1 {
   margin: 40px 0;
   font-size: 30px;
@@ -348,8 +351,8 @@ article section.parallax {
 }
 
 .gallery {
-  width: 640px;
-  margin: 0 auto;
+  width: 760px;
+  margin: 0 auto 50px auto;
   padding: 5px;
   background: #fff;
   box-shadow: 0 1px 2px rgba(0,0,0,.3);
@@ -358,12 +361,12 @@ article section.parallax {
 .gallery > div {
   position: relative;
   float: left;
-  padding: 5px;
+  padding: 35px;
 }
 
 .gallery > div > img {
   display: block;
-  width: 200px;
+  width: 310px;
   transition: .1s transform;
   transform: translateZ(0); /* hack */
 }
@@ -386,4 +389,6 @@ article section.parallax {
 .cf:after {
   clear: both;
 }
-
+/*----------------*/
+/*Resume Page-----*/
+/*----------------*/
