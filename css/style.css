@@ -194,7 +194,7 @@ article .container {
   margin: 0 auto;
   text-align: justify;
 }
-article header {
+.parallax-header {
   position: relative;
   margin: -4.5em 0 0 0;
   padding: 1em;
@@ -268,12 +268,19 @@ article section.parallax {
 
 /*Meida Query*/
 @media screen and (max-width: 370px) {
-  .parallax [class*="bg-"] {
-    height: 35em;
-  }
 
   article .container {
     width: 15.625em;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .parallax {
+    display: none;
+  }
+
+  .parallax-header {
+    display: none;
   }
 }
 @media screen and (max-width: 625px) {
@@ -304,7 +311,7 @@ article section.parallax {
    .parallax [class*="bg-"] {
     height: 70vh;
   }
-  article header {
+  .parallax-header {
     margin: -2.5em 0 0 0;
     padding: 0.5em;
   }
