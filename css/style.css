@@ -145,9 +145,10 @@ header .active {
 }
 
 .parallax .bg-1 {
-  background: #000 url(../img/bcg_slide-3.jpg) no-repeat center center;
+  background: #000 url(../img/bcg_slide-3.jpeg) no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
+  resize: both;
 }
 .parallax .bg-2 {
   background: #000 url(../img/bcg_slide-4.jpg) no-repeat center center;
@@ -377,7 +378,7 @@ article section.parallax {
 
 .gallery > div:hover > img {
   transform: scale(1.7,1.7);
-  transition: .3s transform;
+  transition: 0.3s transform;
 }
 
 .cf:before, .cf:after {
@@ -389,6 +390,45 @@ article section.parallax {
 .cf:after {
   clear: both;
 }
+
+/*Meida Query*/
+@media screen and (max-width: 625px) {
+  .gallery-h1 {
+    margin: 20px 0;
+    font-size: 20px;
+  }
+  .gallery {
+    width: 310px;
+    margin: 0 auto 0 auto;
+    background:none;
+    box-shadow:none;
+  }
+  .gallery > div {
+    margin-bottom: 25px;
+    padding: 0;
+  }
+}
+/*@media screen and (max-width: 720px) {
+  .gallery-h1 {
+    margin: 20px 0;
+    font-size: 25px;
+  }
+  .gallery {
+    width: 620px;
+    margin: 0 auto 0 auto;
+    background:none;
+    box-shadow:none;
+  }
+  .gallery > div {
+    margin-bottom: 25px;
+    padding: 0;
+  }
+  .gallery > div > img {
+    padding: 20px;
+    width: 270px;
+  }
+}*/
+
 /*----------------*/
 /*Resume Page-----*/
 /*----------------*/
