@@ -213,6 +213,11 @@ article section.parallax {
   padding: 0;
 }
 
+@media screen and (max-width: 420px) {
+  article section {
+    padding: 0 3em 0 3em;
+  }
+}
 
 /*Copy*/
 .copy {
@@ -227,6 +232,7 @@ article section.parallax {
     font-size: 0.750em;
     color: rgba(245, 160, 154, 1);
     text-align: center;
+    text-decoration: none;
 }
 
 
